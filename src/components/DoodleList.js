@@ -33,7 +33,6 @@ const DoodleList = (props) => {
         return axios(config)
     }
 
-    
     //renders each doodle that matched the current day selected
     const listOfDoodles = doodles.filter(filteredDoodlesByDay).map((doodle) => {
         let btnLink = `https://www.google.com/search?q=${doodle.query}`
